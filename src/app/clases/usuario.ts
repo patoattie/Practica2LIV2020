@@ -1,4 +1,5 @@
 import { UserInfo } from 'firebase';
+import { Vehiculo } from './vehiculo';
 
 export class Usuario implements UserInfo {
     public displayName: string;
@@ -9,4 +10,5 @@ export class Usuario implements UserInfo {
     public uid: string;
     public tipo: string;
     public direccion?: string;
+    public vehiculos?: Vehiculo[];
 }
